@@ -8,8 +8,6 @@ function generateOutput(event) {
     cursor: null,
     delay: 20,
   });
-  outputElement.innerHTML = "Answer";
 }
-
 let inputFormElement = document.querySelector("#input-form");
 inputFormElement.addEventListener("submit", generateOutput);
