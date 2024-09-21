@@ -17,6 +17,10 @@ a {
   display: none;
 }
 
+.generating {
+  text-align: center;
+}
+
 header {
   margin-bottom: 30px;
 }
