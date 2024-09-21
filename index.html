@@ -7,41 +7,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Welcome to this AI Generator</h1>
-    <section>Please enter your prompt here:</section>
-    <footer>
-      <a href="https://github.com/NCH1210/ai-generator">@Github Repo</a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Please enter your prompt here"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="output">
+          Answer
+          <br />
+        </div>
+      </main>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Please enter your prompt here"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Answer
-        <br />
-      </div>
-    </main>
-
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/NCH1210/" target="_blank">Nina</a> and is
-      <a href="https://github.com/NCH1210/ai-generator" target="_blank">
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://ubiquitous-donut-7243e4.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
-
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/NCH1210/" target="_blank">Nina</a> and is
+        <a href="https://github.com/NCH1210/ai-generator" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://ubiquitous-donut-7243e4.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
