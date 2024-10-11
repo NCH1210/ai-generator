@@ -68,7 +68,7 @@
                 let apiKey = "to16932f9ae9f62c0a0504f6d6954afb";
                 let prompt = `Generate a travel plan for ${instructionsInput.value}`;
                 let context =
-                    "You are an experienced traveller and know the latest trends and what sights to visit. Recommend the user an itinerary based on the travel destination for one day. Answer in a concise way and add a line break for each new station on the travel plan. Keep it to 3 suggestions maximum. Format the text in a strucured way and create a new line for each suggestion, e.g. for the Morning Programme a paragraph and for the afternoon programme a paragraphe.";
+                    "You are an experienced traveller and know the latest trends and what sights to visit. Recommend the user an itinerary based on the travel destination for one day. Answer in a concise way and add a line break for each new station on the travel plan, that means you should separate each section like Morning, Afternoon etc. with a <br />. Keep it to 3 suggestions maximum. Style the categories Morning, Afternoon and Evening with a strong tag and use the color  with the hexadecimal code 885df1 .";
                 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
                 let inputFormElement = document.querySelector("#input-form");
